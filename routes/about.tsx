@@ -50,7 +50,10 @@ export const About = () => {
             </a>
           </span>
           <div
-            className={tw(" w-full flex flex-col pr-20 text-brand-background")}
+            className={tw(
+              " w-full flex flex-col pr-20 text-brand-background",
+              revealAnimation(2.6),
+            )}
           >
             <h1
               className={tw(
@@ -61,7 +64,6 @@ export const About = () => {
                     lineHeight: "4.5rem",
                   },
                 }),
-                revealAnimation(2),
               )}
             >
               Bagus Syamsu Rahmtullah
@@ -70,7 +72,6 @@ export const About = () => {
             <p
               className={tw(
                 "font-light tracking-widest py-5",
-                revealAnimation(2),
               )}
             >
               Hy, I am from Bandung and i'm 22 years old,I am a student at the
@@ -83,7 +84,6 @@ export const About = () => {
               <h2
                 className={tw(
                   "font-semibold text-[2rem]",
-                  revealAnimation(2),
                 )}
               >
                 Education
@@ -121,7 +121,6 @@ export const About = () => {
               <h2
                 className={tw(
                   "font-semibold text-[2rem] mt-5",
-                  revealAnimation(2),
                 )}
               >
                 Experience
@@ -186,12 +185,11 @@ export const About = () => {
               <h2
                 className={tw(
                   "font-semibold text-[2rem] mt-5",
-                  revealAnimation(2),
                 )}
               >
                 Technology Stack
               </h2>
-              <div className={tw("flex flex-wrap gap-x-5 gap-y-3")}>
+              <div className={tw("flex flex-wrap gap-5")}>
                 <img src={asset("/svg/typescript.svg")} alt="" />
                 <img src={asset("/svg/javascript.svg")} alt="" />
                 <img src={asset("/svg/python.svg")} alt="" />
@@ -201,19 +199,19 @@ export const About = () => {
                 <img src={asset("/svg/node.svg")} alt="" />
                 <img src={asset("/svg/prisma.svg")} alt="" />
                 <img
-                  src={asset("/images/fastapi.png")}
+                  src={asset("/images/about/fastapi.png")}
                   width="60px"
                   alt="fastapi"
                 />
                 <img
-                  src={asset("/images/deno.png")}
+                  src={asset("/images/about/deno.png")}
                   style={{
                     height: "56px",
                   }}
                   alt="deno"
                 />
                 <img
-                  src={asset("/images/fresh.png")}
+                  src={asset("/images/about/fresh.png")}
                   style={{
                     height: "56px",
                     width: "58px",
@@ -221,35 +219,35 @@ export const About = () => {
                   alt="fresh"
                 />
                 <img
-                  src={asset("/images/laravel.png")}
+                  src={asset("/images/about/laravel.png")}
                   style={{
                     height: "56px",
                   }}
                   alt="laravel"
                 />
                 <img
-                  src={asset("/images/flutter.png")}
+                  src={asset("/images/about/flutter.png")}
                   style={{
                     height: "56px",
                   }}
                   alt="flutter"
                 />
                 <img
-                  src={asset("/images/dart.png")}
+                  src={asset("/images/about/dart.png")}
                   style={{
                     height: "56px",
                   }}
                   alt="dart"
                 />
                 <img
-                  src={asset("/images/pandas.png")}
+                  src={asset("/images/about/pandas.png")}
                   style={{
                     height: "56px",
                   }}
                   alt="pandas"
                 />
                 <img
-                  src={asset("/images/seaborn.png")}
+                  src={asset("/images/about/seaborn.png")}
                   style={{
                     height: "56px",
                   }}
@@ -257,10 +255,82 @@ export const About = () => {
                   alt="seaborn"
                 />
                 <img
-                  src={asset("/images/nextjs.png")}
+                  src={asset("/images/about/nextjs.png")}
                   width="80px"
                   alt="nextjs"
                 />
+              </div>
+              <h2
+                className={tw(
+                  "font-semibold text-[2rem] mt-5",
+                )}
+              >
+                Interest
+              </h2>
+              <div className={tw("flex gap-x-6 gap-y-3 flex-wrap")}>
+                <span
+                  className={tw(
+                    "btn-outline cursor-default border-brand-black text-brand-black",
+                  )}
+                >
+                  Machine Learning
+                </span>
+                <span
+                  className={tw(
+                    "btn-outline cursor-default border-brand-secondary text-brand-secondary",
+                  )}
+                >
+                  Android
+                </span>
+                <span
+                  className={tw(
+                    "btn-outline cursor-default border-brand-green text-brand-green",
+                  )}
+                >
+                  Web
+                </span>
+                <span
+                  className={tw(
+                    "btn-outline cursor-default border-brand-blue text-brand-blue",
+                  )}
+                >
+                  Artificial Intellegence
+                </span>
+                <span
+                  className={tw(
+                    "btn-outline cursor-default border-brand-background text-brand-background",
+                  )}
+                >
+                  Data Analyst
+                </span>
+                <span
+                  className={tw(
+                    "btn-outline cursor-default border-brand-brown text-brand-brown",
+                  )}
+                >
+                  Web Assembly
+                </span>
+                <span
+                  className={tw(
+                    "btn-outline cursor-default border-brand-secondary text-brand-secondary",
+                  )}
+                >
+                  Web Security
+                </span>
+                <span
+                  className={tw(
+                    "btn-outline cursor-default border-brand-green text-brand-green",
+                  )}
+                >
+                  Blockchain
+                </span>
+                <span
+                  className={tw(
+                    "btn-outline cursor-default border-brand-sky text-brand-sky",
+                  )}
+                >
+                  Natural Processing Language
+                </span>
               </div>
             </div>
           </div>

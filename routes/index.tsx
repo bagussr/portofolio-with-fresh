@@ -39,7 +39,10 @@ export default function Home({}: FC) {
         >
           <a
             href="https://fresh.deno.dev"
-            className={tw("absolute bottom-0 shadow shadow-lg")}
+            className={tw(
+              "absolute bottom-0 shadow shadow-lg",
+              revealAnimation(3),
+            )}
           >
             <img
               width="197"
@@ -97,10 +100,10 @@ export default function Home({}: FC) {
                     position: "absolute",
                     background:
                       "linear-gradient(to bottom, rgba(255,255,255,0.05), rgb(0,0,0,0.1), rgb(0,0,0,0.3), rgba(0,0,0,0.6))",
-                    animationDelay: "1.2s",
                   },
-                  animatePhoto,
+                  animationDelay: "-0.2s",
                 }),
+                animatePhoto,
               )}
             >
               <img

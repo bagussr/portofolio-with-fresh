@@ -59,11 +59,17 @@ export default {
           blue: '#284b63',
           green: '#3c6e71',
           gray: '#d9d9d9',
+          brown: '#914110',
+          sky: '#0074B7',
         },
       },
     },
   },
   plugins: {
     btn: 'px-5 py-3 bg-brand-background text-white rounded rounded-lg font-semibold text-md shadow shadow-lg relative cursor-pointer flex gap-x-3 items-center hover:bg-[#004F87]',
+    'btn-outline':
+      'px-5 py-3   rounded rounded-lg font-semibold text-md shadow shadow-lg relative cursor-pointer flex gap-x-3 items-center border border-2 ',
+    input:
+      ' rounded rounded-md border border-brand-background px-5 py-2 w-full',
   },
 } as Options;

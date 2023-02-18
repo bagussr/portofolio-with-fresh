@@ -12,9 +12,11 @@ export const underlined = animation('0.7s ease infinite', {
 
 export const animatePhoto = animation('1.2s ease-in-out', {
   'from, 0%, to': {
+    opacity: 0,
     transform: 'translateX(-120%)',
   },
   '100%': {
+    opacity: 1,
     transform: 'translateX(0%)',
   },
 });
