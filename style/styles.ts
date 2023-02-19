@@ -1,6 +1,8 @@
 import { css } from 'twind/css';
 
 export enum BubbleSize {
+  xxs = 'w-[150px] h-[150px]',
+  xs = 'w-[200px] h-[200px]',
   sm = 'w-[300px] h-[300px]',
   md = 'w-[400px] h-[400px]',
   lg = 'w-[500px] h-[500px]',
