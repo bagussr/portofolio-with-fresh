@@ -19,7 +19,7 @@ export default {
         minHeight: '100vh',
         '&::after': {
           content:
-            '"Sorry with this problem, this website only works with min screen 1440px"',
+            '"Please for better experience use this app on a device with a larger screen."',
           position: 'absolute',
           transform: 'translate(-50%,-50%)',
           top: '50%',
